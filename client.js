@@ -12,9 +12,14 @@ const connect = function() {
     console.log(`Server says: ${data}`);
   });
 
+  conn.on("connect", () => {
+    console.log("Successfully connected to the game server");
+    conn.write("Name: YYY");
+  });
+
   return conn;
 };
 
 module.exports = {
   connect
-}
+};
