@@ -14,6 +14,15 @@ const handleUserInput = function(key) {
   case "d":
     connection.write("Move: right");
     break;
+  case "y":
+    connection.write("Say: Yo you so slo");
+    break;
+  case "i":
+    connection.write("Say: I'm the Snek King!");
+    break;
+  case "z":
+    connection.write("Say: SssSs Snek JaZz");
+    break;
   case "\u0003":
     process.exit();
   }
@@ -23,7 +32,7 @@ const setupInput = function(conn) {
   connection = conn;
 
   const stdin = process.stdin;
-
+  
   stdin.setRawMode(true);
   stdin.setEncoding("utf8");
   stdin.resume();
