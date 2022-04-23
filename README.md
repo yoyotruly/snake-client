@@ -18,4 +18,6 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Instructions
 
-Use W A S D to navigate the snake up, down, left, or right. Eat the red dot to gain points. If the snake collides with the wall or its own tail, it's game over. Press CTRL + C to quit the game.
+- Use `W A S D` to navigate the snake up, down, left, or right. Eat the red dot to gain points. If the snake collides with the wall or its own tail, it's game over
+- Press `I`, `Y`, or `Z` to send a secret message to screen
+- Press `CTRL + C` to quit the game
