@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["insert project demo screenshot"](#)
+!["snake game demo"](snake.png)
 
 
 ## Getting Started
