@@ -8,12 +8,12 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["snake game demo"](snake.png)
+!["game demo"](snake.png)
 
 
 ## Getting Started
 
-- Follow steps inside the snek server repo to run the server side
+- Follow steps inside the [snek server repo](https://github.com/yoyotruly/snake-server) to run the server side
 - Run the development snake client using the `node play.js` command.
 
 ## Instructions
