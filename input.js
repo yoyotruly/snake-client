@@ -1,32 +1,16 @@
-const { SAY_KEYS, MOVE_UP_KEY, MOVE_DOWN_KEY, MOVE_LEFT_KEY, MOVE_RIGHT_KEY } = require("./constants");
+const { ACTION_KEYS } = require("./constants");
 
 let connection;
 
 const handleUserInput = function(key) {
-  switch (key) {
-  case MOVE_UP_KEY:
-    connection.write("Move: up");
-    break;
-  case MOVE_LEFT_KEY:
-    connection.write("Move: left");
-    break;
-  case MOVE_DOWN_KEY:
-    connection.write("Move: down");
-    break;
-  case MOVE_RIGHT_KEY:
-    connection.write("Move: right");
-    break;
-  case "\u0003":
+  if (key === "\u0003") {
     process.exit();
   }
 
-  if (Object.keys(SAY_KEYS).includes(key)) {
-    connection.write(`Say: ${SAY_KEYS[key]}`);
+  if (Object.keys(ACTION_KEYS).includes(key)) {
+    connection.write(ACTION_KEYS[key]);
   }
-
 };
-
-
 
 const setupInput = function(conn) {
   connection = conn;
